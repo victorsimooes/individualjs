@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cachorro Feliz/Triste</title>
+<style>
+    #cachorro {
+        width: 200px;
+        transition: transform 0.5s;
+    }
+</style>
+</head>
+<body>
+
+<h2>Passe o mouse sobre a imagem do cachorro</h2>
+
+<img id="cachorro" src="https://i1.wp.com/www.quibesurdo.com.br/imagens/entretenimento/animais/cachorro-sorrindo-vamos-comecar-o-dia-feliz-como-ele-esta.jpg" alt="Cachorro Feliz" onmouseover="cachorroFeliz()" onmouseout="cachorroTriste()">
+
+<script>
+    function cachorroFeliz() {
+        document.getElementById("cachorro").src = "https://i1.wp.com/www.quibesurdo.com.br/imagens/entretenimento/animais/cachorro-sorrindo-vamos-comecar-o-dia-feliz-como-ele-esta.jpg";
+        document.getElementById("cachorro").style.transform = "scale(1.1)";
+    }
+
+    function cachorroTriste() {
+        document.getElementById("cachorro").src = "https://th.bing.com/th/id/OIP.7QmHEIH8-dh1ANDW_Xh4jgHaFA?rs=1&pid=ImgDetMain";
+        document.getElementById("cachorro").style.transform = "scale(1)";
+    }
+</script>
+
+</body>
+</html>
